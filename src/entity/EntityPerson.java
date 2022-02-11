@@ -3,18 +3,18 @@ package entity;
 
 
 
-public class Person {
+public class EntityPerson {
 
     private String personName;
     private String personLastName;
     private Integer personAge;
     private long dni; 
-    private Dog dog;
+    private EntityDog dog;
 
-    public Person() {
+    public EntityPerson() {
     }
 
-    public Person(String personName, String personLastName, Integer personAge, long dni, Dog dog) {
+    public EntityPerson(String personName, String personLastName, Integer personAge, long dni, EntityDog dog) {
         this.personName = personName;
         this.personLastName = personLastName;
         this.personAge = personAge;
@@ -54,11 +54,11 @@ public class Person {
         this.dni = dni;
     }
 
-    public Dog getDog() {
+    public EntityDog getDog() {
         return dog;
     }
 
-    public void setDog(Dog dog) {
+    public void setDog(EntityDog dog) {
         this.dog = dog;
     }
 

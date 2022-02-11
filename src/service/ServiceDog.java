@@ -5,14 +5,16 @@
  */
 package service;
 
+import entity.EntityDog;
+
 /**
  *
  * @author Anita
  */
-public interface ServiceEntity {
+public interface ServiceDog {
     
-    public Object createNewEntity();
-    public String printData();
+    public EntityDog createNewDog();
+    public String printDogData(EntityDog newDog);
     
     
 }

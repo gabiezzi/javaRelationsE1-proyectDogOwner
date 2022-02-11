@@ -9,19 +9,19 @@ package entity;
  *
  * @author Anita
  */
-public class Dog {
+public class EntityDog {
     
     private String dogName;
     private String dogBreed;
     private Integer dogAge;
     private String dogSize;
 
-    public Dog() {
+    public EntityDog() {
     }
 
     
     
-    public Dog(String dogName, String dogBreed, Integer dogAge, String dogSize) {
+    public EntityDog(String dogName, String dogBreed, Integer dogAge, String dogSize) {
         this.dogName = dogName;
         this.dogBreed = dogBreed;
         this.dogAge = dogAge;
