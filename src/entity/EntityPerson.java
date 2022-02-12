@@ -1,33 +1,19 @@
-
 package entity;
 
+public class EntityPerson extends Entity {
 
-
-public class EntityPerson {
-
-    private String personName;
     private String personLastName;
-    private Integer personAge;
-    private long dni; 
+    private long dni;
     private EntityDog dog;
 
     public EntityPerson() {
     }
 
-    public EntityPerson(String personName, String personLastName, Integer personAge, long dni, EntityDog dog) {
-        this.personName = personName;
+    public EntityPerson(String personLastName, long dni, EntityDog dog, String name, int age) {
+        super(name, age);
         this.personLastName = personLastName;
-        this.personAge = personAge;
         this.dni = dni;
         this.dog = dog;
-    }
-
-    public String getPersonName() {
-        return personName;
-    }
-
-    public void setPersonName(String personName) {
-        this.personName = personName;
     }
 
     public String getPersonLastName() {
@@ -36,14 +22,6 @@ public class EntityPerson {
 
     public void setPersonLastName(String personLastName) {
         this.personLastName = personLastName;
-    }
-
-    public Integer getPersonAge() {
-        return personAge;
-    }
-
-    public void setPersonAge(Integer personAge) {
-        this.personAge = personAge;
     }
 
     public long getDni() {
@@ -64,10 +42,11 @@ public class EntityPerson {
 
     @Override
     public String toString() {
-        return "Person{" + "personName=" + personName + ", personLastName=" + personLastName + ", personAge=" + personAge + ", dni=" + dni + ", dog=" + dog + '}';
+        return "EntityPerson{" + "personLastName=" + personLastName + ", dni=" + dni + ", dog=" + dog + '}';
     }
-    
-    
 
+    
+    
+    
     
 }

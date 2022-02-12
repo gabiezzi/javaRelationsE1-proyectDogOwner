@@ -25,11 +25,11 @@ public class ServiceImplementPerson implements ServicePerson {
     public EntityPerson createNewPerson() {
         EntityPerson person = new EntityPerson();
         System.out.println("Insert the person name");
-        person.setPersonName(read.next());
+        person.setName(read.next());
         System.out.println("Insert the person last name");
         person.setPersonLastName(read.next());
         System.out.println("Insert the person age");
-        person.setPersonAge(read.nextInt());
+        person.setAge(read.nextInt());
         System.out.println("Insert the person dni");
         person.setDni(read.nextLong());
         System.out.println("Insert the person's dog data: \n");

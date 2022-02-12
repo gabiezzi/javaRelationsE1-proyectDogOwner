@@ -30,13 +30,13 @@ public class ServiceImplementDog implements ServiceDog{
         EntityDog newDog = new EntityDog();
         
         System.out.println("Insert the dog name");
-        newDog.setDogName(read.next());
+        newDog.setName(read.next());
         System.out.println("Insert the dog breed");
         newDog.setDogBreed(read.next());
         System.out.println("Insert the dog size");
         newDog.setDogSize(read.next());
         System.out.println("Insert the dog age");
-        newDog.setDogAge(read.nextInt());
+        newDog.setAge(read.nextInt());
         
         
         return newDog;

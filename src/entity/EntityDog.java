@@ -9,31 +9,18 @@ package entity;
  *
  * @author Anita
  */
-public class EntityDog {
-    
-    private String dogName;
+public class EntityDog extends Entity {
+
     private String dogBreed;
-    private Integer dogAge;
     private String dogSize;
 
-    public EntityDog() {
-    }
-
-    
-    
-    public EntityDog(String dogName, String dogBreed, Integer dogAge, String dogSize) {
-        this.dogName = dogName;
+    public EntityDog(String dogBreed, String dogSize, String name, int age) {
+        super(name, age);
         this.dogBreed = dogBreed;
-        this.dogAge = dogAge;
         this.dogSize = dogSize;
     }
 
-    public String getDogName() {
-        return dogName;
-    }
-
-    public void setDogName(String dogName) {
-        this.dogName = dogName;
+    public EntityDog() {
     }
 
     public String getDogBreed() {
@@ -42,14 +29,6 @@ public class EntityDog {
 
     public void setDogBreed(String dogBreed) {
         this.dogBreed = dogBreed;
-    }
-
-    public Integer getDogAge() {
-        return dogAge;
-    }
-
-    public void setDogAge(Integer dogAge) {
-        this.dogAge = dogAge;
     }
 
     public String getDogSize() {
@@ -62,8 +41,8 @@ public class EntityDog {
 
     @Override
     public String toString() {
-        return "Dog{" + "dogName=" + dogName + ", dogBreed=" + dogBreed + ", dogAge=" + dogAge + ", dogSize=" + dogSize + '}';
+        return "EntityDog{" + "dogBreed=" + dogBreed + ", dogSize=" + dogSize + '}';
     }
-    
+
     
 }
