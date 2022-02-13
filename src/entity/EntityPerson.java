@@ -9,11 +9,11 @@ public class EntityPerson extends Entity {
     public EntityPerson() {
     }
 
-    public EntityPerson(String personLastName, long dni, EntityDog dog, String name, int age) {
+    public EntityPerson(String personLastName, long dni, String name, int age) {
         super(name, age);
         this.personLastName = personLastName;
         this.dni = dni;
-        this.dog = dog;
+       
     }
 
     public String getPersonLastName() {
