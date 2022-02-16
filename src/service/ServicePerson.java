@@ -15,8 +15,11 @@ import entity.EntityPerson;
 public interface ServicePerson {
     
     public EntityPerson createNewPerson();
+    public EntityDog createNewDog();
+    public String printDogData(EntityDog newDog);
     public String printPersonData(String dataPerson);
     public void menu();
     public String addToPersonList(EntityPerson newPerson);
     public String showAllPersonsData();
+    public String asignDogToOwner();
 }
