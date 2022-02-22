@@ -5,15 +5,16 @@
  */
 package service;
 
-import entity.EntityDog;
 import entity.EntityPerson;
 
 /**
  *
- * @author Anita
+ * @author Gabi
  */
-public interface ServicePerson {
+public interface ServiceDogAdoption {
     
-    public EntityPerson createNewPerson();
+    public String addPersonToList(EntityPerson newPerson);
+    public String showAllPersonsData();
+    public void menu();
     
 }

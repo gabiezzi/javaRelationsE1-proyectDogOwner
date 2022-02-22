@@ -6,14 +6,14 @@
 package service;
 
 import entity.EntityDog;
-import entity.EntityPerson;
 
 /**
  *
- * @author Anita
+ * @author Gabi
  */
-public interface ServicePerson {
+public interface ServiceDog {
     
-    public EntityPerson createNewPerson();
+    public EntityDog createNewDog();
+    public String printDogData(EntityDog newDog);
     
 }
