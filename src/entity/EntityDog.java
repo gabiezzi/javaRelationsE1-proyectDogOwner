@@ -73,7 +73,7 @@ public class EntityDog extends Entity {
 
     @Override
     public String toString() {
-        return "EntityDog{" + "dogBreed=" + dogBreed + ", dogSize=" + dogSize + ", hasOwner=" + hasOwner + ", owner=" + owner + '}';
+        return "EntityDog{" +" name = "+ name + " age = " + age + "dogBreed=" + dogBreed + ", dogSize=" + dogSize + ", hasOwner=" + hasOwner + ", owner=" + owner + '}';
     }
     
     

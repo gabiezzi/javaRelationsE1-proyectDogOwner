@@ -18,7 +18,7 @@ public class ServiceImplementDog implements ServiceDog {
     Scanner scan;
 
     public ServiceImplementDog() {
-        scan = new Scanner(System.in);
+        scan = new Scanner(System.in).useDelimiter("\n");
     }
 
     @Override

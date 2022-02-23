@@ -42,7 +42,7 @@ public class EntityPerson extends Entity {
 
     @Override
     public String toString() {
-        return "EntityPerson{" + "personLastName=" + personLastName + ", dni=" + dni + ", dog=" + dog + '}';
+        return "EntityPerson{" +" name = "+ name + " age = " + age + "personLastName=" + personLastName + ", dni=" + dni + ", dog=" + dog + '}';
     }
 
     

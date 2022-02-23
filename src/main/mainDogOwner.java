@@ -2,15 +2,15 @@
 package main;
 
 import entity.EntityPerson;
-import implement.ServiceImplementPerson;
+import implement.ServiceImplementDogAdoption;
 
 
 public class mainDogOwner {
 
     public static void main(String[] args) {
 
-        ServiceImplementPerson newServicePerson = new ServiceImplementPerson();
-        newServicePerson.menu();
+        ServiceImplementDogAdoption newServiceAdoption = new ServiceImplementDogAdoption();
+        newServiceAdoption.menu();
 
     }
 
